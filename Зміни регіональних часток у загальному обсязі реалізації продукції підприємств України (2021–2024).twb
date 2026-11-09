@@ -1,0 +1,853 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Anlysis (Analysis_07-11-2026)' inline='true' name='federated.1hz8pto1wjnkh415qo9t00vnjfyq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Analysis_07-11-2026' name='excel-direct.0bz5ujh1p0fpkq19ghwy0104vn4i'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Лариса/Documents/Аналіз підприємств України/Analysis_07-11-2026.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0bz5ujh1p0fpkq19ghwy0104vn4i' name='Anlysis' table='[Anlysis$]' type='table'>
+          <columns gridOrigin='A1:O28:no:A1:O28:0' header='yes' outcome='2'>
+            <column datatype='string' name='Регіон' ordinal='0' />
+            <column datatype='real' name='2021, млрд.грн' ordinal='1' />
+            <column datatype='real' name='2022 млрд. грн' ordinal='2' />
+            <column datatype='real' name='2023, млрд. грн' ordinal='3' />
+            <column datatype='real' name='2024, млрд. грн' ordinal='4' />
+            <column datatype='real' name='Зміна, млрдю грн' ordinal='5' />
+            <column datatype='real' name='Зміна, %' ordinal='6' />
+            <column datatype='real' name='Частка у 2024 році, %' ordinal='7' />
+            <column datatype='real' name='Частка у 2023 році, %' ordinal='8' />
+            <column datatype='real' name='Частка у 2022 році, %' ordinal='9' />
+            <column datatype='real' name='Частка у 2021 році, %' ordinal='10' />
+            <column datatype='real' name='зміна 2022 проти 2021' ordinal='11' />
+            <column datatype='real' name='зміна 2023 проти 2022' ordinal='12' />
+            <column datatype='real' name='зміна 2024 проти 2023' ordinal='13' />
+            <column datatype='real' name='загальна зміна 2024 проти 2021' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Anlysis]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:O28:no:A1:O28:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Регіон</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Регіон]</local-name>
+            <parent-name>[Anlysis]</parent-name>
+            <remote-alias>Регіон</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2021, млрд.грн</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2021, млрд.грн]</local-name>
+            <parent-name>[Anlysis]</parent-name>
+            <remote-alias>2021, млрд.грн</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2022 млрд. грн</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2022 млрд. грн]</local-name>
+            <parent-name>[Anlysis]</parent-name>
+            <remote-alias>2022 млрд. грн</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2023, млрд. грн</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2023, млрд. грн]</local-name>
+            <parent-name>[Anlysis]</parent-name>
+            <remote-alias>2023, млрд. грн</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2024, млрд. грн</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2024, млрд. грн]</local-name>
+            <parent-name>[Anlysis]</parent-name>
+            <remote-alias>2024, млрд. грн</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Зміна, млрдю грн</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Зміна, млрдю грн]</local-name>
+            <parent-name>[Anlysis]</parent-name>
+            <remote-alias>Зміна, млрдю грн</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Зміна, %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Зміна, %]</local-name>
+            <parent-name>[Anlysis]</parent-name>
+            <remote-alias>Зміна, %</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Частка у 2024 році, %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Частка у 2024 році, %]</local-name>
+            <parent-name>[Anlysis]</parent-name>
+            <remote-alias>Частка у 2024 році, %</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Частка у 2023 році, %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Частка у 2023 році, %]</local-name>
+            <parent-name>[Anlysis]</parent-name>
+            <remote-alias>Частка у 2023 році, %</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Частка у 2022 році, %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Частка у 2022 році, %]</local-name>
+            <parent-name>[Anlysis]</parent-name>
+            <remote-alias>Частка у 2022 році, %</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Частка у 2021 році, %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Частка у 2021 році, %]</local-name>
+            <parent-name>[Anlysis]</parent-name>
+            <remote-alias>Частка у 2021 році, %</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>зміна 2022 проти 2021</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[зміна 2022 проти 2021]</local-name>
+            <parent-name>[Anlysis]</parent-name>
+            <remote-alias>зміна 2022 проти 2021</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>зміна 2023 проти 2022</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[зміна 2023 проти 2022]</local-name>
+            <parent-name>[Anlysis]</parent-name>
+            <remote-alias>зміна 2023 проти 2022</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>зміна 2024 проти 2023</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[зміна 2024 проти 2023]</local-name>
+            <parent-name>[Anlysis]</parent-name>
+            <remote-alias>зміна 2024 проти 2023</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>загальна зміна 2024 проти 2021</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[загальна зміна 2024 проти 2021]</local-name>
+            <parent-name>[Anlysis]</parent-name>
+            <remote-alias>загальна зміна 2024 проти 2021</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='2021, Млрд.Грн' datatype='real' name='[2021, млрд.грн]' role='measure' type='quantitative' />
+      <column caption='2022 Млрд. Грн' datatype='real' name='[2022 млрд. грн]' role='measure' type='quantitative' />
+      <column caption='2023, Млрд. Грн' datatype='real' name='[2023, млрд. грн]' role='measure' type='quantitative' />
+      <column caption='2024, Млрд. Грн' datatype='real' name='[2024, млрд. грн]' role='measure' type='quantitative' />
+      <column caption='Anlysis' datatype='table' name='[__tableau_internal_object_id__].[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]' role='measure' type='quantitative' />
+      <column caption='Зміна, Млрдю Грн' datatype='real' name='[Зміна, млрдю грн]' role='measure' type='quantitative' />
+      <column caption='Частка У 2021 Році, %' datatype='real' name='[Частка у 2021 році, %]' role='measure' type='quantitative' />
+      <column caption='Частка У 2022 Році, %' datatype='real' name='[Частка у 2022 році, %]' role='measure' type='quantitative' />
+      <column caption='Частка У 2023 Році, %' datatype='real' name='[Частка у 2023 році, %]' role='measure' type='quantitative' />
+      <column caption='Частка У 2024 Році, %' datatype='real' name='[Частка у 2024 році, %]' role='measure' type='quantitative' />
+      <column caption='Загальна Зміна 2024 Проти 2021' datatype='real' name='[загальна зміна 2024 проти 2021]' role='measure' type='quantitative' />
+      <column caption='Зміна 2022 Проти 2021' datatype='real' name='[зміна 2022 проти 2021]' role='measure' type='quantitative' />
+      <column caption='Зміна 2023 Проти 2022' datatype='real' name='[зміна 2023 проти 2022]' role='measure' type='quantitative' />
+      <column caption='Зміна 2024 Проти 2023' datatype='real' name='[зміна 2024 проти 2023]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/4460~1/AppData/Local/Temp/TableauTemp/#TableauTemp_1h2r1h31cfzap81ch06l61pytp90.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/08/2026 02:22:18 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Регіон</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Регіон]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Регіон</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Anlysis</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2021, млрд.грн</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[2021, млрд.грн]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2021, млрд.грн</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Anlysis</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2022 млрд. грн</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[2022 млрд. грн]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2022 млрд. грн</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Anlysis</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2023, млрд. грн</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[2023, млрд. грн]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2023, млрд. грн</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Anlysis</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2024, млрд. грн</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[2024, млрд. грн]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2024, млрд. грн</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Anlysis</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Зміна, млрдю грн</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Зміна, млрдю грн]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Зміна, млрдю грн</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Anlysis</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Зміна, %</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Зміна, %]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Зміна, %</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Anlysis</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Частка у 2024 році, %</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Частка у 2024 році, %]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Частка у 2024 році, %</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Anlysis</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Частка у 2023 році, %</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Частка у 2023 році, %]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Частка у 2023 році, %</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Anlysis</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Частка у 2022 році, %</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Частка у 2022 році, %]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Частка у 2022 році, %</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Anlysis</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Частка у 2021 році, %</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Частка у 2021 році, %]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Частка у 2021 році, %</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Anlysis</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>зміна 2022 проти 2021</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[зміна 2022 проти 2021]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>зміна 2022 проти 2021</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Anlysis</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>зміна 2023 проти 2022</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[зміна 2023 проти 2022]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>зміна 2023 проти 2022</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Anlysis</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>зміна 2024 проти 2023</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[зміна 2024 проти 2023]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>зміна 2024 проти 2023</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Anlysis</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>загальна зміна 2024 проти 2021</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[загальна зміна 2024 проти 2021]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>загальна зміна 2024 проти 2021</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Anlysis</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Ukraine&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Anlysis' id='Anlysis_FE0C54B94BC54F1BBEA39CD9DB2213B0'>
+            <properties context=''>
+              <relation connection='excel-direct.0bz5ujh1p0fpkq19ghwy0104vn4i' name='Anlysis' table='[Anlysis$]' type='table'>
+                <columns gridOrigin='A1:O28:no:A1:O28:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Регіон' ordinal='0' />
+                  <column datatype='real' name='2021, млрд.грн' ordinal='1' />
+                  <column datatype='real' name='2022 млрд. грн' ordinal='2' />
+                  <column datatype='real' name='2023, млрд. грн' ordinal='3' />
+                  <column datatype='real' name='2024, млрд. грн' ordinal='4' />
+                  <column datatype='real' name='Зміна, млрдю грн' ordinal='5' />
+                  <column datatype='real' name='Зміна, %' ordinal='6' />
+                  <column datatype='real' name='Частка у 2024 році, %' ordinal='7' />
+                  <column datatype='real' name='Частка у 2023 році, %' ordinal='8' />
+                  <column datatype='real' name='Частка у 2022 році, %' ordinal='9' />
+                  <column datatype='real' name='Частка у 2021 році, %' ordinal='10' />
+                  <column datatype='real' name='зміна 2022 проти 2021' ordinal='11' />
+                  <column datatype='real' name='зміна 2023 проти 2022' ordinal='12' />
+                  <column datatype='real' name='зміна 2024 проти 2023' ordinal='13' />
+                  <column datatype='real' name='загальна зміна 2024 проти 2021' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Зміна регіональної структури 2021-2024'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Anlysis (Analysis_07-11-2026)' name='federated.1hz8pto1wjnkh415qo9t00vnjfyq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hz8pto1wjnkh415qo9t00vnjfyq'>
+            <column-instance column='[Регіон]' derivation='None' name='[none:Регіон:nk]' pivot='key' type='nominal' />
+            <column-instance column='[загальна зміна 2024 проти 2021]' derivation='Sum' name='[sum:загальна зміна 2024 проти 2021:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[Регіон]' role='dimension' type='nominal' />
+            <column caption='Загальна Зміна 2024 Проти 2021' datatype='real' name='[загальна зміна 2024 проти 2021]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1hz8pto1wjnkh415qo9t00vnjfyq].[none:Регіон:nk]' direction='DESC' using='[federated.1hz8pto1wjnkh415qo9t00vnjfyq].[sum:загальна зміна 2024 проти 2021:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1hz8pto1wjnkh415qo9t00vnjfyq].[sum:загальна зміна 2024 проти 2021:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1hz8pto1wjnkh415qo9t00vnjfyq].[none:Регіон:nk]</rows>
+        <cols>[federated.1hz8pto1wjnkh415qo9t00vnjfyq].[sum:загальна зміна 2024 проти 2021:qk]</cols>
+      </table>
+      <simple-id uuid='{C66CED20-8398-4C81-BC68-9CE04DC0399D}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Зміна регіональної структури 2021-2024'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1hz8pto1wjnkh415qo9t00vnjfyq].[sum:загальна зміна 2024 проти 2021:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1hz8pto1wjnkh415qo9t00vnjfyq].[none:Регіон:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5E0370B9-5E09-4BAD-8397-E09D25DBB36A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Зміна регіональної структури 2021-2024' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
